@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: nuxt-content-starter
+    env: static
+    buildCommand: npm run generate
+    staticPublishPath: .output/public
