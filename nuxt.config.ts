@@ -1,8 +1,11 @@
 export default defineNuxtConfig({
   modules: [
-    '@nuxt/content',
     '@nuxtjs/tailwindcss'
   ],
+  runtimeConfig: {
+    API_KEY: import.meta.env.API_KEY,
+    API_DOMAIN: import.meta.env.API_DOMAIN
+  },
   app: {
     head: {
       title: 'Nuxt Content Starter',
@@ -11,12 +14,6 @@ export default defineNuxtConfig({
         { rel: 'stylesheet', href: 'https://unpkg.com/boxicons@latest/css/boxicons.min.css' },
         { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Poppins&display=swap' }
       ]
-    }
-  },
-  nitro: {
-    preset: 'service-worker',
-    prerender: {
-      routes: ['/sitemap.xml']
     }
   },
   content: {

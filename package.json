@@ -1,6 +1,6 @@
 {
-  "name": "nuxt-content-starter",
-  "description": "a simple Nuxt content template",
+  "name": "affiliates-app",
+  "description": "affiliates-app",
   "author": {
     "name": "Chambers",
     "url": "https://github.com/connectshark"
@@ -15,9 +15,7 @@
     "preview": "nuxt preview"
   },
   "devDependencies": {
-    "@nuxt/content": "^2.3.0",
     "@nuxtjs/tailwindcss": "^6.2.0",
-    "nuxt": "^3.0.0",
-    "sitemap": "^7.1.1"
+    "nuxt": "^3.0.0"
   }
 }

@@ -2,7 +2,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: 'rgb(var(--color-primary) / <alpha-value>)'
+        primary: 'rgb(122 106 225 / <alpha-value>)'
       }
     }
   }
