@@ -23,4 +23,5 @@ const {
   nextPage
 } = useOffer()
 
+
 </script>
