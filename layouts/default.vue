@@ -4,7 +4,7 @@
       <h1 class="text-white text-4xl">HELLO {{ config.site.title }}</h1>
     </div>
   </header>
-  <main class=" h-96">
+  <main>
     <article class=" w-11/12 mx-auto max-w-3xl">
       <slot/>
     </article>

@@ -1,6 +1,6 @@
 export default defineAppConfig({
   site: {
-    title: 'Nuxt Template',
+    title: 'Affiliates',
     author: 'Chambers'
   }
 })

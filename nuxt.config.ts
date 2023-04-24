@@ -7,8 +7,9 @@ export default defineNuxtConfig({
     API_DOMAIN: import.meta.env.API_DOMAIN
   },
   app: {
+    rootId: 'app',
     head: {
-      title: 'Nuxt Content Starter',
+      title: 'Affiliates',
       link: [
         { rel: 'icon', type: 'image/x-icon', href: '/nosegates.jpg' },
         { rel: 'stylesheet', href: 'https://unpkg.com/boxicons@latest/css/boxicons.min.css' },
