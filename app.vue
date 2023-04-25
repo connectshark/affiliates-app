@@ -1,3 +1,5 @@
 <template>
-<NuxtPage />
+<div class=" font-ubuntu">
+  <NuxtPage />
+</div>
 </template>

@@ -1,34 +1,34 @@
 export default function () {
   const loading = ref(false)
-  const list = ref([])
+  const data = ref(null)
   const page = ref('1')
 
-  const getState = async () => {
+  const getStat = async () => {
     loading.value = true
     const fetch_response = await fetch(`/api/stats?page=${page.value}`)
     const response = await fetch_response.json()
-    list.value = response.data.offers
+    data.value = response.data
     page.value = parseInt(response.page)
     loading.value = false
   }
 
   const nextPage = async () => {
     page.value++
-    await getOffer()
+    await getStat()
   }
 
   const prevPage = async () => {
     if (page.value > 2) {
       page.value--
-      await getOffer()
+      await getStat()
     }
   }
 
-  onBeforeMount(getState)
+  getStat()
 
   return {
-    list,
     loading,
+    data,
     nextPage,
     page,
     prevPage
