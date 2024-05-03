@@ -4,7 +4,8 @@ export default defineNuxtConfig({
   ],
   runtimeConfig: {
     API_KEY: import.meta.env.API_KEY,
-    API_DOMAIN: import.meta.env.API_DOMAIN
+    API_DOMAIN: import.meta.env.API_DOMAIN,
+    API_VERSION: import.meta.env.API_VERSION
   },
   app: {
     rootId: 'app',
@@ -16,9 +17,6 @@ export default defineNuxtConfig({
         { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Ubuntu:wght@400;500;700&display=swap' }
       ]
     }
-  },
-  content: {
-    defaultLocale: 'zh-TW'
   },
   tailwindcss: {
     viewer: false,

@@ -1,13 +1,13 @@
 <template>
   <NuxtLayout>
-    <div>Offer</div>
+    <div>conversion</div>
   </NuxtLayout>
 </template>
 
-
 <script setup>
+
 const {
   loading,
   list
-} = useOffer()
+} = useConversions()
 </script>
